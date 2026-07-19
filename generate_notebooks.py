@@ -45,11 +45,13 @@ seaborn_nbs = [
 ]
 
 ds_nbs = [
-    "01_built_in_sequences.ipynb",
-    "02_hash_based_maps.ipynb",
-    "03_linear_structures.ipynb",
-    "04_heaps_priority_queues.ipynb",
-    "05_trees_and_graphs.ipynb"
+    "01_arrays.ipynb",
+    "02_linked_lists.ipynb",
+    "03_stacks_queues.ipynb",
+    "04_hash_tables.ipynb",
+    "05_bst_avl.ipynb",
+    "06_heaps.ipynb",
+    "07_graphs.ipynb"
 ]
 
 def create_notebook(path, lib, title):

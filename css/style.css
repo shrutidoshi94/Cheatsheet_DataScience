@@ -756,6 +756,49 @@ p  { color: var(--text-secondary); }
 .card-back-body::-webkit-scrollbar { width: 3px; }
 .card-back-body::-webkit-scrollbar-thumb { background: var(--border-hover); }
 
+.card-back-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 0.85rem;
+}
+.card-back-body th, .card-back-body td {
+  border: 1px solid var(--border-hover);
+  padding: 0.4rem;
+  text-align: left;
+}
+.card-back-body th {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--accent);
+  font-weight: 600;
+}
+.card-back-body td {
+  color: var(--text-secondary);
+}
+.card-back-body pre.diagram {
+  background: var(--bg-primary);
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  overflow-x: auto;
+  line-height: 1.2;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+.card-back-body ul.pitfalls {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 1rem 0;
+}
+.card-back-body ul.pitfalls li {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+
 .params-box {
   background: var(--bg-code);
   border: 1px solid var(--border);
