@@ -1163,7 +1163,9 @@ window.CARDS_DATA['seaborn'] = [
 ];
 
 
-// DATA STRUCTURES CARDS\nwindow.CARDS_DATA['datastructures'] = [
+
+// DATA STRUCTURES CARDS
+window.CARDS_DATA['datastructures'] = [
   {
     "id": "ds_master_1",
     "title": "Arrays / Dynamic Arrays",
@@ -1234,4 +1236,4 @@ window.CARDS_DATA['seaborn'] = [
     "description": "<strong>ADT:</strong> set of vertices V and edges E modeling pairwise relationships. <br><strong>Impl:</strong> Adjacency List = dict/array of neighbor lists (sparse-friendly); Adjacency Matrix = V\u00d7V grid of edge weights/flags (dense-friendly, O(1) edge lookup).",
     "params": "<pre class=\"diagram\">\nGraph: A-B, A-C, B-C      Adjacency List      Adjacency Matrix\n                               A: [B, C]           A  B  C\n   (A)---(B)                   B: [A, C]        A [ 0, 1, 1 ]\n     \\   /                     C: [A, B]        B [ 1, 0, 1 ]\n      (C)                                       C [ 1, 1, 0 ]</pre>\n<table>\n<tr><th>Op</th><th>List</th><th>Matrix</th></tr>\n<tr><td>Add vertex</td><td>O(1)</td><td>O(V\u00b2)</td></tr>\n<tr><td>Add edge</td><td>O(1)</td><td>O(1)</td></tr>\n<tr><td>Remove edge</td><td>O(deg)</td><td>O(1)</td></tr>\n<tr><td>Edge query (u,v)?</td><td>O(deg)</td><td>O(1)</td></tr>\n<tr><td>Iterate neighbors</td><td>O(deg)</td><td>O(V)</td></tr>\n<tr><td>Space</td><td>O(V+E)</td><td>O(V\u00b2)</td></tr>\n<tr><td>BFS / DFS</td><td>O(V+E)</td><td>O(V\u00b2)</td></tr>\n</table>\n<div style=\"font-size:0.75rem; color:var(--text-secondary); margin-bottom: 0.5rem;\">(V=VERTICES, E=EDGES)</div>\n<strong>PITFALLS</strong>\n<ul class=\"pitfalls\">\n<li>Adjacency matrix wastes O(V\u00b2) memory on sparse graphs \u2014 infeasible past ~10\u2074 vertices; prefer list.</li>\n<li>Undirected graphs need edges added <em>both</em> directions \u2014 a common off-by-one/one-way-edge bug.</li>\n<li>Forgetting a <code>visited</code> set in DFS/BFS on a cyclic graph causes infinite loops/stack overflow.</li>\n<li>Dense weighted graphs (Floyd-Warshall) favor matrix; sparse shortest-path (Dijkstra) favors list + heap \u2014 pick per access pattern, not habit.</li>\n</ul>"
   }
-];\n
+];

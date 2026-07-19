@@ -311,9 +311,9 @@ if split_token in content:
 
 with open(cards_data_path, "w") as f:
     f.write(content)
-    f.write(split_token + "\\n")
+    f.write("\n" + split_token + "\n")
     f.write("window.CARDS_DATA['datastructures'] = ")
     json.dump(ds_cards, f, indent=2)
-    f.write(";\\n")
+    f.write(";\n")
 
 print("Successfully replaced Data Structures cards in js/cards-data.js")
