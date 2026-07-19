@@ -12,17 +12,4 @@ A reference website designed for active learning. It contains interactive flashc
 
 ## Hosting on GitHub Pages
 This project is set up to be hosted on GitHub Pages so the Colab Notebooks can be accessed.
-
-To enable GitHub Pages:
-- Go to your repository on GitHub.
-- Click on **Settings** > **Pages** (under Code and automation).
-- Under **Build and deployment**, set the Source to **Deploy from a branch**.
-- Select the `main` branch and `/ (root)` folder, then click **Save**.
-- Your site will be published at `https://shrutidoshi94.github.io/Cheatsheet_DataScience/`.
-
-## Running Locally
-You can test the website locally using any local web server:
-```bash
-python3 -m http.server 8000
-```
-Then visit `http://localhost:8000` in your browser.
+!https://shrutidoshi94.github.io/Cheatsheet_DataScience/
