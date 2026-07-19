@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scikit-learn Syntax Cards</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-library="sklearn">
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">DS <span>Syntax Cards</span></a>
+    <div class="navbar-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="numpy.html" class="nav-link">NumPy</a>
+      <a href="pandas.html" class="nav-link">Pandas</a>
+      <a href="sklearn.html" class="nav-link active">Scikit-learn</a>
+      <a href="seaborn.html" class="nav-link">Seaborn</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="lib-page-header">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <div class="lib-header-content">
+      <div class="lib-header-left">
+        <h1>Scikit-learn <span class="version-tag">v1.9.0</span></h1>
+        <p>Machine learning in Python. Predictive data analysis tools.</p>
+      </div>
+      <div class="header-stats">
+        <div class="header-stat">
+          <span class="num">44</span>
+          <span class="lbl">Syntax Cards</span>
+        </div>
+        <div class="header-stat">
+          <span class="num">9</span>
+          <span class="lbl">Categories</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Theory Section -->
+  <section class="theory-section">
+    <div class="theory-content">
+      <h2>Introduction to Scikit-learn</h2>
+      <p>Scikit-learn is the standard library for traditional machine learning in Python. It provides a clean, uniform, and streamlined API for predictive data analysis. It covers classification, regression, clustering, and dimensionality reduction, all built on NumPy, SciPy, and matplotlib.</p>
+      <div class="theory-grid">
+        <div class="theory-card">
+          <h3>The Estimator API</h3>
+          <p>Every algorithm in Scikit-learn implements a standard interface. You initialize the model, call <code>fit(X, y)</code> to train it, and then call <code>predict(X)</code> or <code>transform(X)</code> to use it.</p>
+        </div>
+        <div class="theory-card">
+          <h3>Transformers & Pipelines</h3>
+          <p>Data preprocessing steps (like scaling or encoding) are Transformers. Scikit-learn allows chaining these steps with Estimators using Pipelines, preventing data leakage during cross-validation.</p>
+        </div>
+        <div class="theory-card">
+          <h3>Model Evaluation</h3>
+          <p>The library provides robust tools for model selection, including cross-validation (<code>cross_val_score</code>) and hyperparameter tuning (<code>GridSearchCV</code>) to ensure models generalize well to new data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Controls -->
+  <div class="controls">
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search-input" placeholder="Search Scikit-learn syntax...">
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">Categories:</span>
+      <div id="filter-chips"></div>
+    </div>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-section">
+    <div class="progress-text" id="progress-text">0 of 44 explored</div>
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="progress-fill"></div>
+    </div>
+    <div class="progress-pct" id="progress-pct">0%</div>
+  </div>
+
+  <!-- Cards Grid -->
+  <main class="cards-section">
+    <div id="cards-grid"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://scikit-learn.org/stable/" target="_blank">Scikit-learn Docs</a>
+      <a href="https://github.com/shrutidoshi94/ds-syntax-cards" target="_blank">GitHub Repo</a>
+    </div>
+    <p>Built with ❤️ for Data Scientists</p>
+  </footer>
+
+  <script src="js/cards-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

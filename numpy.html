@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NumPy Syntax Cards</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-library="numpy">
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">DS <span>Syntax Cards</span></a>
+    <div class="navbar-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="numpy.html" class="nav-link active">NumPy</a>
+      <a href="pandas.html" class="nav-link">Pandas</a>
+      <a href="sklearn.html" class="nav-link">Scikit-learn</a>
+      <a href="seaborn.html" class="nav-link">Seaborn</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="lib-page-header">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <div class="lib-header-content">
+      <div class="lib-header-left">
+        <h1>NumPy <span class="version-tag">v2.5.0</span></h1>
+        <p>The fundamental package for scientific computing with Python.</p>
+      </div>
+      <div class="header-stats">
+        <div class="header-stat">
+          <span class="num">37</span>
+          <span class="lbl">Syntax Cards</span>
+        </div>
+        <div class="header-stat">
+          <span class="num">8</span>
+          <span class="lbl">Categories</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Theory Section -->
+  <section class="theory-section">
+    <div class="theory-content">
+      <h2>Introduction to NumPy</h2>
+      <p>NumPy (Numerical Python) is the foundation of the Python data science ecosystem. At its core is the <code>ndarray</code> (N-dimensional array), a fast, flexible container for large datasets in Python. NumPy arrays are statically typed and stored in contiguous memory, making them up to 50x faster than traditional Python lists.</p>
+      <div class="theory-grid">
+        <div class="theory-card">
+          <h3>Vectorization</h3>
+          <p>NumPy eliminates the need for explicit for-loops. Operations are applied element-wise across entire arrays at C-speed, leading to cleaner and faster code.</p>
+        </div>
+        <div class="theory-card">
+          <h3>Broadcasting</h3>
+          <p>A powerful mechanism that allows NumPy to perform arithmetic operations on arrays of different shapes by virtually expanding the smaller array to match the larger one.</p>
+        </div>
+        <div class="theory-card">
+          <h3>Memory Efficiency</h3>
+          <p>Unlike Python lists which store pointers to objects, NumPy arrays store elements of the same type in contiguous memory, minimizing overhead and maximizing cache utilization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Controls -->
+  <div class="controls">
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search-input" placeholder="Search NumPy syntax...">
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">Categories:</span>
+      <div id="filter-chips"></div>
+    </div>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-section">
+    <div class="progress-text" id="progress-text">0 of 37 explored</div>
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="progress-fill"></div>
+    </div>
+    <div class="progress-pct" id="progress-pct">0%</div>
+  </div>
+
+  <!-- Cards Grid -->
+  <main class="cards-section">
+    <div id="cards-grid"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://numpy.org/doc/stable/" target="_blank">NumPy Docs</a>
+      <a href="https://github.com/shrutidoshi94/ds-syntax-cards" target="_blank">GitHub Repo</a>
+    </div>
+    <p>Built with ❤️ for Data Scientists</p>
+  </footer>
+
+  <script src="js/cards-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

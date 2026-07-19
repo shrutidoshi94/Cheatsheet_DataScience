@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pandas Syntax Cards</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-library="pandas">
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">DS <span>Syntax Cards</span></a>
+    <div class="navbar-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="numpy.html" class="nav-link">NumPy</a>
+      <a href="pandas.html" class="nav-link active">Pandas</a>
+      <a href="sklearn.html" class="nav-link">Scikit-learn</a>
+      <a href="seaborn.html" class="nav-link">Seaborn</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="lib-page-header">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <div class="lib-header-content">
+      <div class="lib-header-left">
+        <h1>Pandas <span class="version-tag">v3.0.4</span></h1>
+        <p>Fast, powerful, flexible and easy to use data analysis tool.</p>
+      </div>
+      <div class="header-stats">
+        <div class="header-stat">
+          <span class="num">45</span>
+          <span class="lbl">Syntax Cards</span>
+        </div>
+        <div class="header-stat">
+          <span class="num">9</span>
+          <span class="lbl">Categories</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Theory Section -->
+  <section class="theory-section">
+    <div class="theory-content">
+      <h2>Introduction to Pandas</h2>
+      <p>Pandas is built on top of NumPy and provides high-level data structures and manipulation tools for tabular data. Its two primary data structures are the 1-dimensional <code>Series</code> and the 2-dimensional <code>DataFrame</code>. It excels at handling missing data, alignment, and relational operations.</p>
+      <div class="theory-grid">
+        <div class="theory-card">
+          <h3>DataFrames</h3>
+          <p>Think of a DataFrame as a programmable Excel spreadsheet or SQL table. It holds heterogeneous data types in columns and supports complex queries and transformations.</p>
+        </div>
+        <div class="theory-card">
+          <h3>Alignment</h3>
+          <p>Pandas automatically aligns data based on explicit labels (indexes). When adding two Series, Pandas matches the indexes rather than the positions, preventing silent errors.</p>
+        </div>
+        <div class="theory-card">
+          <h3>Split-Apply-Combine</h3>
+          <p>A powerful paradigm for data analysis. Pandas' <code>groupby</code> operations allow you to split data into groups, apply a function to each group, and combine the results into a new data structure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Controls -->
+  <div class="controls">
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search-input" placeholder="Search Pandas syntax...">
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">Categories:</span>
+      <div id="filter-chips"></div>
+    </div>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-section">
+    <div class="progress-text" id="progress-text">0 of 45 explored</div>
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="progress-fill"></div>
+    </div>
+    <div class="progress-pct" id="progress-pct">0%</div>
+  </div>
+
+  <!-- Cards Grid -->
+  <main class="cards-section">
+    <div id="cards-grid"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://pandas.pydata.org/docs/" target="_blank">Pandas Docs</a>
+      <a href="https://github.com/shrutidoshi94/ds-syntax-cards" target="_blank">GitHub Repo</a>
+    </div>
+    <p>Built with ❤️ for Data Scientists</p>
+  </footer>
+
+  <script src="js/cards-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
