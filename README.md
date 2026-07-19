@@ -1,38 +1,24 @@
-# Data Science Syntax Cards
+# Cheatsheet_DataScience
 
-A reference website designed for active learning. It contains interactive flashcards covering 95% of the day-to-day APIs in NumPy, Pandas, and Scikit-learn, with links to runnable Jupyter Notebooks in Google Colab.
+A reference website designed for active learning. It contains interactive flashcards covering 95% of the day-to-day APIs in NumPy, Pandas, Scikit-learn, and Seaborn, with links to runnable Jupyter Notebooks in Google Colab.
 
 ## Structure
 - `index.html`: Landing page.
-- `numpy.html`, `pandas.html`, `sklearn.html`: Flashcard pages for each library.
+- `numpy.html`, `pandas.html`, `sklearn.html`, `seaborn.html`: Flashcard pages for each library.
 - `css/style.css`: Design system.
-- `js/cards-data.js`: The dataset containing 126 cards.
+- `js/cards-data.js`: The dataset containing 146 cards.
 - `js/main.js`: Interaction logic (flip animation, filtering, search, progress tracking).
-- `notebooks/`: 26 Jupyter Notebooks corresponding to the 26 categories covered by the flashcards.
+- `notebooks/`: 31 Jupyter Notebooks corresponding to the 31 categories covered by the flashcards.
 
 ## Hosting on GitHub Pages
-To publish this website for free via GitHub Pages, follow these steps:
+This project is set up to be hosted on GitHub Pages so the Colab Notebooks can be accessed.
 
-1. **Initialize Git and Commit**:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit of DS Syntax Cards"
-   ```
-2. **Create a GitHub Repository**:
-   Create a **Public** repository on GitHub named `ds-syntax-cards`. Note: The repository MUST be public to host GitHub Pages for free and to allow Google Colab to access the notebooks.
-3. **Push the Code**:
-   ```bash
-   git remote add origin https://github.com/shrutidoshi94/ds-syntax-cards.git
-   git branch -M main
-   git push -u origin main
-   ```
-4. **Enable GitHub Pages**:
-   - Go to your repository on GitHub.
-   - Click on **Settings** > **Pages** (under Code and automation).
-   - Under **Build and deployment**, set the Source to **Deploy from a branch**.
-   - Select the `main` branch and `/ (root)` folder, then click **Save**.
-   - Your site will be published at `https://shrutidoshi94.github.io/ds-syntax-cards/`.
+To enable GitHub Pages:
+- Go to your repository on GitHub.
+- Click on **Settings** > **Pages** (under Code and automation).
+- Under **Build and deployment**, set the Source to **Deploy from a branch**.
+- Select the `main` branch and `/ (root)` folder, then click **Save**.
+- Your site will be published at `https://shrutidoshi94.github.io/Cheatsheet_DataScience/`.
 
 ## Running Locally
 You can test the website locally using any local web server:
