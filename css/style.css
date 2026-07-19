@@ -49,6 +49,11 @@
   --seaborn-glow:   rgba(38, 166, 154, 0.12);
   --seaborn-border: rgba(38, 166, 154, 0.3);
 
+  --datastructures:        #fbc02d;
+  --datastructures-dark:   #f9a825;
+  --datastructures-glow:   rgba(251, 192, 45, 0.12);
+  --datastructures-border: rgba(251, 192, 45, 0.3);
+
   /* Difficulty */
   --beginner:     #56d364;
   --intermediate: #e3b341;
@@ -121,7 +126,7 @@ h3 { font-size: 1.2rem; }
 p  { color: var(--text-secondary); }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--numpy) 0%, var(--pandas) 33%, var(--sklearn) 66%, var(--seaborn) 100%);
+  background: linear-gradient(135deg, var(--numpy) 0%, var(--pandas) 25%, var(--sklearn) 50%, var(--seaborn) 75%, var(--datastructures) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -288,6 +293,7 @@ p  { color: var(--text-secondary); }
 .library-card.pandas { --lib-color: var(--pandas); --lib-glow: var(--pandas-glow); }
 .library-card.sklearn{ --lib-color: var(--sklearn); --lib-glow: var(--sklearn-glow); }
 .library-card.seaborn{ --lib-color: var(--seaborn); --lib-glow: var(--seaborn-glow); }
+.library-card.datastructures{ --lib-color: var(--datastructures); --lib-glow: var(--datastructures-glow); }
 
 .lib-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
 .lib-name {
@@ -842,6 +848,7 @@ body[data-library="numpy"]  { --accent: var(--numpy);  --accent-glow: var(--nump
 body[data-library="pandas"] { --accent: var(--pandas); --accent-glow: var(--pandas-glow); --accent-border: var(--pandas-border); }
 body[data-library="sklearn"]{ --accent: var(--sklearn); --accent-glow: var(--sklearn-glow); --accent-border: var(--sklearn-border); }
 body[data-library="seaborn"]{ --accent: var(--seaborn); --accent-glow: var(--seaborn-glow); --accent-border: var(--seaborn-border); }
+body[data-library="datastructures"]{ --accent: var(--datastructures); --accent-glow: var(--datastructures-glow); --accent-border: var(--datastructures-border); }
 
 /* ================================================================
    ANIMATIONS & KEYFRAMES

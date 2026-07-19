@@ -44,6 +44,14 @@ seaborn_nbs = [
     "05_aesthetics.ipynb"
 ]
 
+ds_nbs = [
+    "01_built_in_sequences.ipynb",
+    "02_hash_based_maps.ipynb",
+    "03_linear_structures.ipynb",
+    "04_heaps_priority_queues.ipynb",
+    "05_trees_and_graphs.ipynb"
+]
+
 def create_notebook(path, lib, title):
     content = {
         "cells": [
@@ -107,5 +115,8 @@ for nb in sklearn_nbs:
 
 for nb in seaborn_nbs:
     create_notebook(os.path.join(base_dir, "seaborn", nb), "Seaborn", nb.replace(".ipynb", "").replace("_", " ").title())
+
+for nb in ds_nbs:
+    create_notebook(os.path.join(base_dir, "datastructures", nb), "Data Structures", nb.replace(".ipynb", "").replace("_", " ").title())
 
 print("All notebooks generated successfully.")

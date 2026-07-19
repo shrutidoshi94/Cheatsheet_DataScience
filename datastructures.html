@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pandas Syntax Cards</title>
+  <title>Data Structures Syntax Cards</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-library="pandas">
+<body data-library="datastructures">
 
   <!-- Navigation -->
   <nav class="navbar">
@@ -14,10 +14,10 @@
     <div class="navbar-links">
       <a href="index.html" class="nav-link">Home</a>
       <a href="numpy.html" class="nav-link">NumPy</a>
-      <a href="pandas.html" class="nav-link active">Pandas</a>
+      <a href="pandas.html" class="nav-link">Pandas</a>
       <a href="sklearn.html" class="nav-link">Scikit-learn</a>
       <a href="seaborn.html" class="nav-link">Seaborn</a>
-      <a href="datastructures.html" class="nav-link">Data Structures</a>
+      <a href="datastructures.html" class="nav-link active">Data Structures</a>
     </div>
   </nav>
 
@@ -26,16 +26,16 @@
     <a href="index.html" class="back-link">← Back to Home</a>
     <div class="lib-header-content">
       <div class="lib-header-left">
-        <h1>Pandas <span class="version-tag">v3.0.4</span></h1>
-        <p>Fast, powerful, flexible and easy to use data analysis tool.</p>
+        <h1>Data Structures <span class="version-tag">Python Core</span></h1>
+        <p>Master computer science fundamentals in Python. Understand Big O time complexity for Lists, Dictionaries, Trees, and Graphs.</p>
       </div>
       <div class="header-stats">
         <div class="header-stat">
-          <span class="num">45</span>
+          <span class="num">34</span>
           <span class="lbl">Syntax Cards</span>
         </div>
         <div class="header-stat">
-          <span class="num">9</span>
+          <span class="num">5</span>
           <span class="lbl">Categories</span>
         </div>
       </div>
@@ -45,20 +45,24 @@
   <!-- Theory Section -->
   <section class="theory-section">
     <div class="theory-content">
-      <h2>Introduction to Pandas</h2>
-      <p>Pandas is built on top of NumPy and provides high-level data structures and manipulation tools for tabular data. Its two primary data structures are the 1-dimensional <code>Series</code> and the 2-dimensional <code>DataFrame</code>. It excels at handling missing data, alignment, and relational operations.</p>
+      <h2>Big O & Data Structures</h2>
+      <p>Choosing the right data structure can be the difference between a model taking 5 seconds or 5 hours to run. Understanding <strong>Big O notation</strong> helps us classify algorithms according to how their run time or space requirements grow as the input size grows.</p>
       <div class="theory-grid">
         <div class="theory-card">
-          <h3>DataFrames</h3>
-          <p>Think of a DataFrame as a programmable Excel spreadsheet or SQL table. It holds heterogeneous data types in columns and supports complex queries and transformations.</p>
+          <h3>Built-in Sequences</h3>
+          <p>Python's <code>list</code> is a dynamic array (O(1) append, O(N) insert), while <code>tuple</code> is immutable. Great for ordered data and iteration.</p>
         </div>
         <div class="theory-card">
-          <h3>Alignment</h3>
-          <p>Pandas automatically aligns data based on explicit labels (indexes). When adding two Series, Pandas matches the indexes rather than the positions, preventing silent errors.</p>
+          <h3>Hash-based Maps</h3>
+          <p><code>dict</code> and <code>set</code> use hash tables. They provide ultra-fast O(1) average time complexity for lookups, insertions, and deletions.</p>
         </div>
         <div class="theory-card">
-          <h3>Split-Apply-Combine</h3>
-          <p>A powerful paradigm for data analysis. Pandas' <code>groupby</code> operations allow you to split data into groups, apply a function to each group, and combine the results into a new data structure.</p>
+          <h3>Linear Structures</h3>
+          <p>Stacks (LIFO) and Queues (FIFO) can be implemented using lists or <code>collections.deque</code> (which provides O(1) operations on both ends).</p>
+        </div>
+        <div class="theory-card">
+          <h3>Advanced Structures</h3>
+          <p>Trees, Graphs, and Heaps (Priority Queues) are essential for hierarchical data, networking, and efficient sorting/pathfinding tasks.</p>
         </div>
       </div>
     </div>
@@ -68,7 +72,7 @@
   <div class="controls">
     <div class="search-bar">
       <span class="search-icon">🔍</span>
-      <input type="text" id="search-input" placeholder="Search Pandas syntax...">
+      <input type="text" id="search-input" placeholder="Search Data Structures syntax...">
     </div>
     <div class="filter-row">
       <span class="filter-label">Categories:</span>
@@ -78,7 +82,7 @@
 
   <!-- Progress -->
   <div class="progress-section">
-    <div class="progress-text" id="progress-text">0 of 45 explored</div>
+    <div class="progress-text" id="progress-text">0 of 34 explored</div>
     <div class="progress-bar-track">
       <div class="progress-bar-fill" id="progress-fill"></div>
     </div>
@@ -93,8 +97,8 @@
   <!-- Footer -->
   <footer>
     <div class="footer-links">
-      <a href="https://pandas.pydata.org/docs/" target="_blank">Pandas Docs</a>
-      <a href="https://github.com/shrutidoshi94/ds-syntax-cards" target="_blank">GitHub Repo</a>
+      <a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">Python Docs</a>
+      <a href="https://github.com/shrutidoshi94/Cheatsheet_DataScience" target="_blank">GitHub Repo</a>
     </div>
     <p>Built with ❤️ for Data Scientists</p>
   </footer>
