@@ -272,7 +272,9 @@ for card in ds_cards:
         "id": card["id"],
         "metadata": {"id": card["id"]},
         "source": [
-            f"## {card['title']}\n"
+            f"## {card['title']}\n\n",
+            card["description"] + "\n\n",
+            card["params"]
         ]
     }
     
