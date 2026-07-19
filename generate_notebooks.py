@@ -76,7 +76,7 @@ def create_notebook(path, lib, title):
                     "import matplotlib.pyplot as plt\n",
                     "import seaborn as sns\n",
                     "\n",
-                    "print(f'Ready to explore {lib}!')"
+                    f"print('Ready to explore {lib}!')"
                 ]
             }
         ],
